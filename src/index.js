@@ -16,10 +16,11 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("search-form-input");
-  let cityElement = document.querySelector("#city");
-  let searchFormElement = document.querySelector("#search-form");
-  searchCity(searchInput.value);
 
-  searchFormElement.addEventListener("submit", handleSearchSubmit);
-  searchCity("Paris");
+  searchCity(searchInput.value);
 }
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Paris");
