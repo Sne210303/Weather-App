@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather Application</title>
   </head>
   <body>
@@ -22,12 +23,17 @@
             required
             class="search-form-input"
           />
-          <input type="submit" value="Search" class="search-form-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-form-button"
+            id="search-form-input"
+          />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
-          <h1 class="weather-app-city">Paris</h1>
+          <h1 class="weather-app-city" id="city">Paris</h1>
           <p class="weather-app-details">
             Tuesday 14:49, Scattered clouds
             <br />
