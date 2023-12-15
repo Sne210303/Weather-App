@@ -73,6 +73,18 @@ main {
   border-radius: 6px;
   color: white;
 }
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+  color: #000;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
 
 footer {
   border-top: 1px solid #f9f7fe;
